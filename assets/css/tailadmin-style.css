@@ -1,0 +1,384 @@
+/* TailAdmin HVAC System - Custom Styles */
+/* Based on TailAdmin Tailwind Dashboard Template */
+
+/* Custom Tailwind Configuration */
+:root {
+  --brand-50: #ecf3ff;
+  --brand-100: #dde9ff;
+  --brand-200: #c2d6ff;
+  --brand-300: #9cb9ff;
+  --brand-400: #7592ff;
+  --brand-500: #465fff;
+  --brand-600: #3641f5;
+  --brand-700: #2a31d8;
+  --brand-800: #252dae;
+  --brand-900: #262e89;
+  
+  --gray-25: #fcfcfd;
+  --gray-50: #f9fafb;
+  --gray-100: #f2f4f7;
+  --gray-200: #e4e7ec;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --gray-800: #1d2939;
+  --gray-900: #101828;
+  
+  --success-50: #ecfdf3;
+  --success-500: #12b76a;
+  --success-600: #039855;
+  
+  --error-50: #fef3f2;
+  --error-500: #f04438;
+  --error-600: #d92d20;
+  
+  --warning-50: #fffaeb;
+  --warning-500: #f79009;
+  --warning-600: #dc6803;
+}
+
+/* TailAdmin Body Styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--gray-50);
+  color: var(--gray-900);
+  line-height: 1.6;
+}
+
+/* TailAdmin Sidebar Styles */
+.sidebar {
+  background: white;
+  border-right: 1px solid var(--gray-200);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  padding: 2rem 1.5rem 1.75rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem 0;
+  color: var(--gray-600);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--gray-50);
+  color: var(--gray-800);
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--brand-50);
+  color: var(--brand-600);
+  border-left: 3px solid var(--brand-500);
+}
+
+.sidebar .nav-link i {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* TailAdmin Header Styles */
+.top-header {
+  background: white;
+  border-bottom: 1px solid var(--gray-200);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  height: 80px;
+  padding: 0 2rem;
+}
+
+/* TailAdmin Cards */
+.tailadmin-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tailadmin-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--gray-100);
+  background: var(--gray-25);
+}
+
+.tailadmin-card-body {
+  padding: 1.5rem;
+}
+
+/* TailAdmin Tables */
+.tailadmin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tailadmin-table th {
+  background-color: var(--gray-50);
+  color: var(--gray-700);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.tailadmin-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--gray-100);
+  vertical-align: middle;
+}
+
+.tailadmin-table tbody tr:hover {
+  background-color: var(--gray-25);
+}
+
+/* TailAdmin Buttons */
+.btn-tailadmin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-tailadmin-primary {
+  background-color: var(--brand-500);
+  color: white;
+  border-color: var(--brand-500);
+}
+
+.btn-tailadmin-primary:hover {
+  background-color: var(--brand-600);
+  border-color: var(--brand-600);
+  color: white;
+}
+
+.btn-tailadmin-secondary {
+  background-color: var(--gray-100);
+  color: var(--gray-700);
+  border-color: var(--gray-200);
+}
+
+.btn-tailadmin-secondary:hover {
+  background-color: var(--gray-200);
+  color: var(--gray-800);
+}
+
+.btn-tailadmin-success {
+  background-color: var(--success-500);
+  color: white;
+  border-color: var(--success-500);
+}
+
+.btn-tailadmin-success:hover {
+  background-color: var(--success-600);
+  border-color: var(--success-600);
+}
+
+.btn-tailadmin-danger {
+  background-color: var(--error-500);
+  color: white;
+  border-color: var(--error-500);
+}
+
+.btn-tailadmin-danger:hover {
+  background-color: var(--error-600);
+  border-color: var(--error-600);
+}
+
+/* TailAdmin Forms */
+.form-tailadmin {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.form-tailadmin:focus {
+  outline: none;
+  border-color: var(--brand-500);
+  box-shadow: 0 0 0 3px rgba(70, 95, 255, 0.1);
+}
+
+.form-tailadmin::placeholder {
+  color: var(--gray-400);
+}
+
+/* TailAdmin Stats Cards */
+.stat-card-tailadmin {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.stat-card-tailadmin:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.stat-icon-tailadmin {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.stat-icon-primary {
+  background-color: var(--brand-500);
+}
+
+.stat-icon-success {
+  background-color: var(--success-500);
+}
+
+.stat-icon-warning {
+  background-color: var(--warning-500);
+}
+
+.stat-icon-error {
+  background-color: var(--error-500);
+}
+
+/* TailAdmin Alerts */
+.alert-tailadmin {
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.alert-success {
+  background-color: var(--success-50);
+  border-color: var(--success-200);
+  color: var(--success-700);
+}
+
+.alert-error {
+  background-color: var(--error-50);
+  border-color: var(--error-200);
+  color: var(--error-700);
+}
+
+.alert-warning {
+  background-color: var(--warning-50);
+  border-color: var(--warning-200);
+  color: var(--warning-700);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .top-header {
+    padding: 0 1rem;
+  }
+  
+  .tailadmin-card-header,
+  .tailadmin-card-body {
+    padding: 1rem;
+  }
+  
+  .tailadmin-table th,
+  .tailadmin-table td {
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-tailadmin {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8125rem;
+  }
+}
+
+/* Dark Mode Support (Future Enhancement) */
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --gray-50: #0c111d;
+    --gray-100: #1a2231;
+    --gray-200: #344054;
+    background-color: var(--gray-900);
+    color: white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-400);
+}
+
+/* Table Responsive Wrapper */
+.table-responsive-tailadmin {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.75rem;
+  border: 1px solid var(--gray-200);
+}
+
+/* Loading States */
+.loading-spinner {
+  border: 2px solid var(--gray-200);
+  border-top: 2px solid var(--brand-500);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
