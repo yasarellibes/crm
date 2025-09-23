@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Include required files first
 require_once 'config/auth.php';
-require_once 'config/database.php';
+require_once 'config/database_production.php';
 require_once 'includes/functions.php';
 
 // Require login
@@ -221,7 +221,7 @@ require_once 'includes/header.php';
                             <label for="phone" class="form-label">Telefon <span class="text-danger">*</span></label>
                             <input type="tel" class="form-control" id="phone" name="phone" 
                                    value="<?= e($_POST['phone'] ?? '') ?>" 
-                                   placeholder="05320528000" required onblur="checkPhone()" oninput="handlePhoneInput()"
+                                   placeholder="05123456789" required onblur="checkPhone()" oninput="handlePhoneInput()"
                                    maxlength="11" pattern="[0-9]{10,11}" title="Sadece rakam giriniz (10-11 hane)">
                             <div class="invalid-feedback" id="phoneError">Geçerli bir Türkiye telefon numarası giriniz (05XXXXXXXXX).</div>
                             <div class="form-text" id="phoneMessage">11 haneli Türkiye telefon numarası formatında giriniz.</div>
